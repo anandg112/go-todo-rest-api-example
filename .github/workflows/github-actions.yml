@@ -14,7 +14,6 @@ jobs:
         uses: actions/setup-go@v3
         with:
           go-version: ${{ matrix.go }}
-          working-directory: ./
           run: |
             go get github.com/mingrammer/go-todo-rest-api-example
             go build -v ./...
