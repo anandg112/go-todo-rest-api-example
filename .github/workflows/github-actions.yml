@@ -17,6 +17,6 @@ jobs:
           working-directory: ./
           run: |
             go get github.com/mingrammer/go-todo-rest-api-example
-            go build
+            go build -v ./...
             ./go-todo-rest-api-example
 
