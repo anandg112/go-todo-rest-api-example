@@ -6,6 +6,7 @@ metadata:
   description: Go todo-api
   annotations:
     github.com/project-slug: 'backstage/go-api'
+    backstage.io/techdocs-ref: dir:.
   tags:
     - go
     - api
