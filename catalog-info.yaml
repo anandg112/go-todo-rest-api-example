@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: go-api
+  namespace: app/handler
   description: Go todo-api 
   tags:
     - go
@@ -10,3 +11,5 @@ spec:
   type: service
   lifecycle: dev
   owner: gogo-team
+  providesApis:
+    - projects
