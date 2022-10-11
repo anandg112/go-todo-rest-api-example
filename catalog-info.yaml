@@ -3,7 +3,9 @@ kind: Component
 metadata:
   name: go-api
   namespace: app
-  description: Go todo-api 
+  description: Go todo-api
+  annotations:
+    github.com/project-slug: 'backstage/go-api'
   tags:
     - go
     - api
