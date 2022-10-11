@@ -6,16 +6,17 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        go: [ '1.14', '1.13' ]
-    name: Go ${{ matrix.go }} sample
+        go: [ '1.18', '1.19' ]
+    name: Go ${{ matrix.go }} todo-api
     steps:
       - uses: actions/checkout@v3
       - name: Setup go
         uses: actions/setup-go@v3
         with:
           go-version: ${{ matrix.go }}
-      - run: |
-          cd go-todo-rest-api-example
-          go build
-          ./go-todo-rest-api-example
+          working-directory: ./
+          run: |
+            go get github.com/mingrammer/go-todo-rest-api-example
+            go build
+            ./go-todo-rest-api-example
 
