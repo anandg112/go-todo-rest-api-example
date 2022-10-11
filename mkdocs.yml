@@ -2,7 +2,5 @@ site_name: Root docs
 
 nav:
   - Home: index.md
-  - Subdirectory docs:
-    - mycomponent: '!include ./sub-dir-documentation/mkdocs.yml'
 
 docs_dir: docs
