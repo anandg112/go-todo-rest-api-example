@@ -15,6 +15,7 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
       - run: |
+          cd go-todo-rest-api-example
           go build
           ./go-todo-rest-api-example
 
